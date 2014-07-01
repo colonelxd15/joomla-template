@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+        <name>bsjoomla</name>
+        <creationDate>2014-06-27</creationDate>
+        <author>Norman M. Manantan</author>
+        <authorEmail>normanmanatan@gmail.com</authorEmail>
+        <authorUrl>http://www.google.com</authorUrl>
+        <copyright>Norman 2014</copyright>
+        <license>GNU/GPL</license>
+        <version>1.0.2</version>
+        <description>Joomla Test Template</description>
+        <files>
+                <filename>index.php</filename>
+                <filename>templateDetails.xml</filename>
+                <filename>index.html</filename>
+                <folder>images</folder>
+                <folder>css</folder>
+                <folder>html</folder>
+                <folder>js</folder>
+        </files>
+        <positions>
+                <position>top-page</position>
+                <position>bottom-page-left</position>
+                <position>bottom-page-right</position>
+                <position>heading</position>
+                <position>landing-page</position>
+                <position>featured</position>
+                <position>management</position>
+                <position>about-slider</position>
+                <position>works</position>
+                <position>works-content</position>
+                <position>works-quote</position>
+                <position>process</position>
+                <position>services</position>
+                <position>partners</position>
+                <position>contacts</position>
+        </positions>
+</extension>
