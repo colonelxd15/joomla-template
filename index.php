@@ -26,11 +26,16 @@
 				</div>
 			</div>
 			<div id="footer">
-				<div class="col-md-2">
-					<jdoc type="modules" position="bottom-page-left" />
-				</div>
-				<div class="col-md-offset-8 col-md-2">
-					<jdoc type="modules" position="bottom-page-right" />
+				<div class="container-fluid">
+					<div class="row">
+						<div class="clearfix"></div>
+						<div class="col-md-2">
+							<jdoc type="modules" position="bottom-page-left" />
+						</div>
+						<div class="col-md-offset-8 col-md-2">
+							<jdoc type="modules" position="bottom-page-right" />
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>

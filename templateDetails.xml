@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="template">
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="3.0" type="template" method="upgrade">
         <name>bsjoomla</name>
         <creationDate>2014-06-27</creationDate>
         <author>Norman M. Manantan</author>
@@ -12,11 +12,9 @@
         <files>
                 <filename>index.php</filename>
                 <filename>templateDetails.xml</filename>
-                <filename>index.html</filename>
                 <folder>images</folder>
                 <folder>css</folder>
                 <folder>html</folder>
-                <folder>js</folder>
         </files>
         <positions>
                 <position>top-page</position>
