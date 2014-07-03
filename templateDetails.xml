@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <extension version="3.0" type="template" method="upgrade">
-        <name>bsjoomla</name>
+        <name>MTO Joomla</name>
         <creationDate>2014-06-27</creationDate>
         <author>Norman M. Manantan</author>
         <authorEmail>normanmanatan@gmail.com</authorEmail>
@@ -13,13 +13,16 @@
                 <filename>index.php</filename>
                 <filename>templateDetails.xml</filename>
                 <folder>images</folder>
-                <folder>css</folder>
+                <folder>fonts</folder>
+                <folder>stylesheets</folder>
                 <folder>html</folder>
         </files>
+        
         <positions>
                 <position>top-page</position>
                 <position>bottom-page-left</position>
                 <position>bottom-page-right</position>
+                <position>bottom-page-small</position>
                 <position>heading</position>
                 <position>landing-page</position>
                 <position>featured</position>
