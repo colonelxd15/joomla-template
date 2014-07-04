@@ -33,9 +33,7 @@
 						<jdoc:include type="modules" name="landing-page" />
 						<div class="container">
 							<div class="row">
-								<div class="col-md-offset-2 col-md-8">
-									<jdoc:include type="component" />
-								</div>
+								<jdoc:include type="component" />
 				                <jdoc:include type="modules" name="management" />
 				                <jdoc:include type="modules" name="about-slider" />
 				                <jdoc:include type="modules" name="works" />

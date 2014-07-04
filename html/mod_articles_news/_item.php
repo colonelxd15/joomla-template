@@ -7,30 +7,17 @@
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-defined('_JEXEC') or die;
-$item_heading = $params->get('item_heading', 'h4');
+	defined('_JEXEC') or die;
+	$item_heading = $params->get('item_heading', 'h4');
+	$images = json_decode($item->images);
+
 ?>
-<?php if ($params->get('item_title')) : ?>
-	<<?php echo $item_heading; ?> class="project_name">
-	<?php if ($params->get('link_titles') && $item->link != '') : ?>
-		<a href="<?php echo $item->link;?>">
-			<?php echo $item->title;?>
-		</a>
-	<?php else : ?>
-		<?php echo $item->title; ?>
-	<?php endif; ?>
-	</<?php echo $item_heading; ?>>
 
-<?php endif; ?>
+	<a href="index.php?option=com_content&view=article&id=<?php echo $item->id;?>">
 
-<?php if (!$params->get('intro_only')) :
-	echo $item->afterDisplayTitle;
-endif; ?>
-
-<?php echo $item->beforeDisplayContent; ?>
-
-<?php echo $item->introtext; ?>
-
-<?php if (isset($item->link) && $item->readmore != 0 && $params->get('readmore')) :
-	echo '<a class="readmore" href="'.$item->link.'">'.$item->linkText.'</a>';
-endif; ?>
+	<div class="project-img">	
+		<img src="<?php echo htmlspecialchars($images->image_intro); ?>" 
+		alt="<?php echo htmlspecialchars($images->image_intro_alt); ?>"/>
+	</div>
+	<p class="projet-name"><?php echo htmlspecialchars($images->image_intro_caption); ?></p>
+</a>

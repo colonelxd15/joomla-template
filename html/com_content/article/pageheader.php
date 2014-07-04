@@ -11,9 +11,10 @@ $canEdit = $params->get('access-edit');
 $user    = JFactory::getUser();
 $info    = $params->get('info_block_position', 0);
 JHtml::_('behavior.caption');
+
 ?>
 
-<div class="item-page blog <?php echo $this->pageclass_sfx?>">
+<div class="page-head col-md-offset-2 col-md-8">
 	<?php if ($this->params->get('show_page_heading') && $params->get('show_title')) : ?>
 		<h1>
 			<?php echo $this->escape($this->params->get('page_heading')); ?>
@@ -33,15 +34,6 @@ JHtml::_('behavior.caption');
 	        <?php endif; ?>
 	    </h3>
 	<?php endif; ?>       
-		
-	<?php 
-		if (!$params->get('show_intro')) : 
-			echo $this->item->event->afterDisplayTitle; 
-		endif; 
-	?>
-
-	<?php echo $this->item->event->beforeDisplayContent; ?>
 
 	<?php echo $this->item->text; ?>
-
-	<?php echo $this->item->event->afterDisplayContent; ?> </div>
+</div>

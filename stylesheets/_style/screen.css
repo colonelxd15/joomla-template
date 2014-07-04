@@ -224,3 +224,8 @@ html, body {
   border-top: rgba(0, 0, 0, 0) solid 40px;
   border-bottom: rgba(0, 0, 0, 0) solid 40px;
 }
+
+/* line 133, ../../sass/_style/_partials/_partials.scss */
+.article-heading {
+  text-align: center;
+}
