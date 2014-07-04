@@ -19,11 +19,11 @@
         </files>
         
         <positions>
+                <position>process</position>
                 <position>top-page</position>
                 <position>bottom-page-left</position>
                 <position>bottom-page-right</position>
                 <position>bottom-page-small</position>
-                <position>heading</position>
                 <position>landing-page</position>
                 <position>featured</position>
                 <position>management</position>
@@ -31,7 +31,6 @@
                 <position>works</position>
                 <position>works-content</position>
                 <position>works-quote</position>
-                <position>process</position>
                 <position>services</position>
                 <position>partners</position>
                 <position>contacts</position>

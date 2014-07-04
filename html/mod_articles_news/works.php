@@ -1,18 +1,10 @@
-<?php
-/**
- * @package     Joomla.Site
- * @subpackage  mod_articles_news
- *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
+<?php defined('_JEXEC') or die; ?>
 
-defined('_JEXEC') or die;
-?>
-<div class="<?php echo $moduleclass_sfx; ?>">
-<?php
-	foreach ($list as $item) :
-		require JModuleHelper::getLayoutPath('mod_articles_news', '_item');
-	endforeach;
-?>
+<div class="contents">
+	<?php for ($i = 0, $n = count($list); $i < $n; $i ++) :
+		$item = $list[$i]; ?>
+		<div class="col-md-4">
+			<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item');?>
+		</div>
+	<?php endfor; ?>
 </div>

@@ -8,7 +8,7 @@
 		<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/stylesheets/font-awesome.min.css" rel="stylesheet" />
 		</head>
 	<body>
-		<div id="main-wrapper">
+		<div id="wrapper">
 			<div id="top-menu-wrapper">
 			<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 			      <div class="container">
@@ -27,24 +27,31 @@
 			      </div>
 			    </div>
 			</div>
-			<div id="middle" class="container"> 
-				<div class="row">
-					<jdoc:include type="component" />
-					<jdoc:include type="modules" name="heading" />
-	                <jdoc:include type="modules" name="landing-page" />
-	                <jdoc:include type="modules" name="featured" />
-	                <jdoc:include type="modules" name="management" />
-	                <jdoc:include type="modules" name="about-slider" />
-	                <jdoc:include type="modules" name="works" />
-	                <jdoc:include type="modules" name="works-content" />
-	                <jdoc:include type="modules" name="works-quote" />
-	                <jdoc:include type="modules" name="process" />
-	                <jdoc:include type="modules" name="services" />
-	                <jdoc:include type="modules" name="partners" />
-	                <jdoc:include type="modules" name="contacts" />
+			<div id="main-page-wrapper">
+				<div class="container-fluid"> 
+					<div class="row">
+						<jdoc:include type="modules" name="landing-page" />
+						<div class="container">
+							<div class="row">
+								<div class="col-md-offset-2 col-md-8">
+									<jdoc:include type="component" />
+								</div>
+				                <jdoc:include type="modules" name="management" />
+				                <jdoc:include type="modules" name="about-slider" />
+				                <jdoc:include type="modules" name="works" />
+				                <jdoc:include type="modules" name="works-content" />
+				                <jdoc:include type="modules" name="works-quote" />
+				                <jdoc:include type="modules" name="services" />
+				                <jdoc:include type="modules" name="contacts" />
+							</div>
+						</div>
+		                <jdoc:include type="modules" name="featured" />
+				        <jdoc:include type="modules" name="partners" />
+						<jdoc:include type="modules" name="process" />
+					</div>
 				</div>
 			</div>
-			<div id="footer">
+			<div id="footer-section">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="clearfix"></div>
