@@ -16,6 +16,7 @@
                 <folder>fonts</folder>
                 <folder>stylesheets</folder>
                 <folder>html</folder>
+                <folder>js</folder>
         </files>
         
         <positions>
