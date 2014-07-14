@@ -242,7 +242,6 @@ html, body {
 /* line 98, ../sass/_style/_partials/_partials.scss */
 #main-page-wrapper {
   padding-bottom: 50px;
-  margin: 50px auto 0;
 }
 
 /* line 102, ../sass/_style/_partials/_partials.scss */
@@ -296,6 +295,30 @@ html, body {
 }
 
 /* line 134, ../sass/_style/_partials/_partials.scss */
-.article-heading {
+.article-heading, .big {
   text-align: center;
+}
+
+/* line 137, ../sass/_style/_partials/_partials.scss */
+.big {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+/* line 142, ../sass/_style/_partials/_partials.scss */
+.vid-text {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+  width: 75%;
+}
+
+/* line 147, ../sass/_style/_partials/_partials.scss */
+.front {
+  position: absolute;
+  top: 35%;
+}
+/* line 151, ../sass/_style/_partials/_partials.scss */
+.front .page-head div {
+  width: 100% !important;
+  margin: 0 !important;
 }

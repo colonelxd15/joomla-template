@@ -1,4 +1,12 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
+<?php 
+	$menu =& JSite::getMenu(); 
+	$active = $menu->getActive();
+
+	$app = JFactory::getApplication();
+	$menu = $app->getMenu();
+	
+?>  
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,6 +18,7 @@
 		<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/stylesheets/font-awesome.min.css" rel="stylesheet" />
 	</head>
 	<body>
+
 		<jdoc:include type="message" />
 		<div id="wrapper">
 			<div id="top-menu-wrapper">
@@ -34,9 +43,16 @@
 				<div class="container-fluid"> 
 					<div class="row">
 						<jdoc:include type="modules" name="landing-page" />
+							<?php if ($menu->getActive() == $menu->getDefault()): ?>
+							<div class="front">
+								<jdoc:include type="component" />
+							</div>
+							<?php endif; ?>
 						<div class="container">
 							<div class="row">
-								<jdoc:include type="component" />
+								<?php if (!($menu->getActive() == $menu->getDefault())): ?>
+									<jdoc:include type="component" />
+								<?php endif; ?>
 							</div>
 						</div>
 						<jdoc:include type="modules" name="process" />
