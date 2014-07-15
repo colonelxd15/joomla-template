@@ -301,7 +301,7 @@ html, body {
 
 /* line 137, ../sass/_style/_partials/_partials.scss */
 .big {
-  font-size: 40px;
+  font-size: 40px !important;
   margin: 0 auto;
 }
 
@@ -321,4 +321,39 @@ html, body {
 .front .page-head div {
   width: 100% !important;
   margin: 0 !important;
+}
+
+/* line 157, ../sass/_style/_partials/_partials.scss */
+.video {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
+
+/* line 165, ../sass/_style/_partials/_partials.scss */
+.featured-title {
+  height: 300px;
+  width: 100%;
+  border-radius: 100%;
+  line-height: 300px;
+  font-size: 150px;
+  margin-right: 25%;
+}
+
+/* line 168, ../sass/_style/_partials/_partials.scss */
+.featured-cs {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  border: 1px solid #888;
+}
+
+/* line 175, ../sass/_style/_partials/_partials.scss */
+p {
+  margin: 0;
 }

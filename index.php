@@ -56,6 +56,7 @@
 							</div>
 						</div>
 						<jdoc:include type="modules" name="process" />
+						 <jdoc:include type="modules" name="featured" />
 						<div class="container">
 							<div class="row">
 							    <jdoc:include type="modules" name="management" />
@@ -67,7 +68,7 @@
 							</div>
 						</div>
 					    <jdoc:include type="modules" name="about-slider" />
-		                <jdoc:include type="modules" name="featured" />
+		               
 				        <jdoc:include type="modules" name="partners" />
 					</div>
 				</div>
@@ -86,5 +87,6 @@
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/bootstrap.min.js"></script>
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.slider1.js"></script>
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/window-resize.js"></script>
+		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.lazymethod.js"></script>
 		</body>
 </html>

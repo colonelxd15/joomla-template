@@ -7,6 +7,6 @@ jQuery(document).ready(function(){
 		winHeight = $(window).height();
 		navHeight = $('.navbar').height();
 		winWidth = $(window).width();	
-      $('.video').height(winHeight - navHeight).width(winWidth);
+     // $('.video').height(winHeight - navHeight).width(winWidth);
 	}
 });
